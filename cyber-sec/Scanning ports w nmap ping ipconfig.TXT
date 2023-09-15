@@ -1,0 +1,19 @@
+Identify servers on a network (windows)
+ipconfig /all
+
+Check if a server is up and running
+ping [ip-address]
+
+e.g. ping 10.7.1.22
+
+Ping multiple ports:
+nmap -sP [ip-address]
+
+Typically with websites port 80 and port 443 are open.
+
+Be aware that nmap is not discreet. You can practice on any server you own or have permission to scan. e.g. scanme.nmap.org
+Use -sS option for stealthy scan. Works by doing incomplete handshakes to establish if a port is open. This helps avoid firewalls detecting suspicious activity.
+Not specifying a port scans the top 1000 most popular ports
+
+Many options with nmap such as OS detection. -A. -D for decoy ip addresses.
+use nmap scripts. To run all scripts under category vuln use nmap --script vuln

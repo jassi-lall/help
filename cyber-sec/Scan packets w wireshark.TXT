@@ -1,0 +1,3 @@
+Install wireshark (available on windows)
+Allows you to view network traffic and filter (e.g. filter based on protocol - like TELNET, HTTP, HTTPS, etc.)
+To view the ip address of a website use nslookup on CLI
